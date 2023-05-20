@@ -3,6 +3,9 @@
 <symbol id="icon-arrow" viewBox="0 0 32 32">
 <path fill="none" stroke="#fcf7e6" style="stroke: var(--color1, #fcf7e6)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M8 12l8 8 8-8"></path>
 </symbol>
+<symbol id="icon-arrow-right" viewBox="0 0 66 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M65.508 17.799c0.833-0.833 0.833-2.184 0-3.017l-13.577-13.576c-0.833-0.833-2.184-0.833-3.017 0s-0.833 2.184 0 3.017l12.068 12.068-12.068 12.068c-0.833 0.833-0.833 2.184 0 3.017s2.184 0.833 3.017 0l13.577-13.576zM0 18.424h64v-4.267h-64v4.267z"></path>
+</symbol>
 <symbol id="icon-alert-circle" viewBox="0 0 32 32">
 <path fill="none" stroke="#fcf7e6" style="stroke: var(--color1, #fcf7e6)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M16 29.333c7.364 0 13.333-5.97 13.333-13.333s-5.97-13.333-13.333-13.333c-7.364 0-13.333 5.97-13.333 13.333s5.97 13.333 13.333 13.333z"></path>
 <path fill="none" stroke="#fcf7e6" style="stroke: var(--color1, #fcf7e6)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M16 10.667v5.333"></path>

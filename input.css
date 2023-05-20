@@ -4,11 +4,10 @@
 
 @layer base {
   html {
-    font-family: "Space Grotesk", sans-serif, "Space Mono", monospace;
-
-    :focus-visible {
-      outline: none;
-    }
+    font-family: "Space Grotesk", "Space Mono", sans-serif, monospace;
+  }
+  *:focus-visible {
+    outline: none;
   }
 
   a:hover,

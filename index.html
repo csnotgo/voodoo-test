@@ -15,86 +15,113 @@
   </head>
   <body class="bg-lightSand">
     <!-- -----------------------------Header-------------------------------------------->
-    <header class="p-6 flex justify-between items-center border-b border-black">
-      <div class="flex space-x-1">
-        <svg width="23" height="23">
+    <header
+      class="p-6 flex justify-between items-center lg:items-start border-b border-black lg:py-12 lg:pl-[62px] lg:pr-[120px]"
+    >
+      <div class="flex space-x-1 lg:space-x-3">
+        <svg width="23" height="23" class="lg:w-[45px] lg:h-[45px]">
           <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
-        <svg width="94" height="48">
+        <svg width="94" height="48" class="lg:w-[193px] lg:h-[98px]">
           <use href="./images/sprite.svg#icon-logo-text"></use>
         </svg>
       </div>
-      <div class="flex items-center space-x-4 h-[34px]">
-        <a href="#about-us" class="font-semibold text-sm pl-3">About us</a>
+      <div class="flex items-center space-x-4 lg:space-x-12 h-[34px] lg:h-[38px]">
+        <a href="#about-us" class="font-semibold text-sm lg:text-xl pl-3">About us</a>
         <button
-          class="bg-black text-white text-sm font-bold p-3 rounded h-[34px] flex items-center justify-center hover:bg-orangeHover focus:bg-orangeHover"
+          class="sign-up-btn bg-black text-white text-sm lg:text-xl font-bold p-3 rounded h-[34px] lg:h-[38px] flex items-center justify-center hover:bg-orangeHover focus:bg-orangeHover"
         >
           Sign-up
         </button>
       </div>
     </header>
 
-    <main class="container mx-auto px-6">
+    <main class="container">
       <!-- ---------------------------More info section--------------------------------->
-      <section class="pt-6 pb-[25px]">
-        <div class="bg-black rounded p-6 pb-0 more-info">
-          <div class="flex items-center pb-6">
-            <svg width="24" height="24">
-              <use href="./images/sprite.svg#icon-alert-circle"></use>
-            </svg>
-            <p class="font-bold text-base text-white ml-1.5">ALPHA</p>
-            <p class="font-medium text-sm text-white ml-6">Important info</p>
-            <svg width="24" height="24" class="ml-auto arrow">
-              <use href="./images/sprite.svg#icon-arrow"></use>
-            </svg>
+      <section class="pt-6 pb-[25px] lg:pt-[100px] lg:pb-6">
+        <div class="bg-black rounded p-6 more-info flex gap-6 lg:gap-12 relative">
+          <div class="flex h-fit lg:h-auto lg:items-center">
+            <div class="flex items-center h-fit">
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#icon-alert-circle"></use>
+              </svg>
+              <p class="font-bold text-base text-lightSand ml-1.5">ALPHA</p>
+            </div>
           </div>
 
-          <div class="info-box hidden">
-            <div class="py-6 border-y border-white">
-              <p class="font-medium text-sm text-white">
-                We’re working on a new service to offer you returned online goods at a discount near you.
-              </p>
-            </div>
+          <div class="flex flex-col h-6 justify-center">
+            <p class="font-medium text-sm text-lightSand">
+              Important info <span class="hidden lg:inline">regarding our service</span>
+            </p>
 
-            <div class="pt-6 pb-4">
-              <h2 class="font-bold text-sm text-white mb-4">CURRENTLY</h2>
-              <ul class="font-regular text-xs text-white list-decimal list-inside space-y-4">
-                <li>Very limited assortment of items that we resell</li>
-                <li>All sorts of product categories</li>
-                <li>Focus on testing the ordering and pick-up experience</li>
-              </ul>
-            </div>
+            <!-- ---------------------------Info-box ---------------------------->
+            <div class="info-box hidden w-[85%] md:w-[93%] lg:w-[80%] pt-6 absolute left-6 lg:left-[152px] top-[48px]">
+              <div class="py-6 border-y border-white">
+                <p class="font-medium text-sm text-white">
+                  We’re working on a new service to offer you returned online goods at a discount near you.
+                </p>
+              </div>
 
-            <div class="pt-4 pb-6">
-              <h2 class="font-bold text-sm text-white mb-4">FUTURE</h2>
-              <ul class="font-regular text-xs text-white list-decimal list-inside space-y-4">
-                <li>Returned items from other shoppers</li>
-                <li>Select product categories</li>
-                <li>Focus on end-to-end service experience</li>
-              </ul>
+              <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 pt-6">
+                <div>
+                  <h2 class="font-bold text-sm text-white mb-4 lg:mb-[19px]">CURRENTLY</h2>
+                  <ul class="font-regular text-xs text-white list-decimal list-inside space-y-4">
+                    <li>Very limited assortment of items that we resell</li>
+                    <li>All sorts of product categories</li>
+                    <li>Focus on testing the ordering and pick-up experience</li>
+                  </ul>
+                </div>
+
+                <div class="hidden lg:flex flex-col justify-end gap-3">
+                  <svg width="30" height="20">
+                    <use href="./images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                  <svg width="30" height="20">
+                    <use href="./images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                  <svg width="30" height="20">
+                    <use href="./images/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </div>
+
+                <div>
+                  <h2 class="font-bold text-sm text-white mb-4 lg:mb-[19px]">FUTURE</h2>
+                  <ul class="font-regular text-xs text-white list-decimal list-inside space-y-4">
+                    <li>Returned items from other shoppers</li>
+                    <li>Select product categories</li>
+                    <li>Focus on end-to-end service experience</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="ml-auto flex items-center h-6 lg:h-auto">
+            <svg width="24" height="24" class="arrow">
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
           </div>
         </div>
       </section>
 
       <!-- ---------------------------Products list section----------------------------->
-      <section class="py-[25px]">
-        <ul class="list flex flex-col items-center gap-12"></ul>
+      <section class="py-[25px] lg:py-6">
+        <ul class="list flex flex-col flex-wrap items-center justify-center gap-12 md:flex-row md:gap-x-6"></ul>
       </section>
 
       <!-- ---------------------------Sign-up section----------------------------------->
-      <section class="pt-[25px] pb-20">
+      <section class="pt-[25px] pb-20 lg:pt-6">
         <div class="py-12">
-          <p class="text-sm text-center">Be the first one to know when we launch our beta!</p>
-          <form class="mt-6 h-[43px] space-x-3 flex justify-center w-full">
+          <p class="text-sm lg:text-xl text-center">Be the first one to know when we launch our beta!</p>
+          <form class="form mt-6 h-[43px] space-x-3 flex justify-center w-full">
             <input
               type="email"
-              class="p-4 rounded bg-white h-[43px] w-auto hover:shadow-outline focus:shadow-outline"
+              class="p-4 rounded bg-white h-[43px] w-auto lg:w-[518px] hover:shadow-outline focus:shadow-outline placeholder:text-black text-base font-semibold"
               placeholder="E-mail"
             />
             <button
               type="submit"
-              class="bg-orange rounded h-[43px] p-4 font-semibold text-base flex justify-center items-center hover:bg-orangeHover focus:bg-orangeHover"
+              class="sign-up-btn bg-orange rounded h-[43px] p-4 font-semibold text-base flex justify-center items-center hover:bg-orangeHover focus:bg-orangeHover"
             >
               Sign-up
             </button>
@@ -103,8 +130,12 @@
       </section>
     </main>
     <!-- -----------------------------Footer-------------------------------------------->
-    <footer class="bg-white p-12 border-t border-black">
-      <ul class="font-['Space Mono'] font-bold text-smFooter space-y-12">
+    <footer
+      class="bg-white p-12 md:py-[84px] md:px-[120px] border-t border-black flex flex-col md:flex-row-reverse md:justify-between md:items-center"
+    >
+      <ul
+        class="font-mono font-bold text-smFooter space-y-12 md:space-y-0 flex flex-col md:flex-row md:justify-between md:w-full"
+      >
         <li>
           <ul class="space-y-[19px]">
             <li><a href="#faq">FAQ</a></li>
@@ -122,7 +153,11 @@
         </li>
         <li>
           <ul class="space-y-[19px]">
-            <li><a href="#about-voodoo">ABOUT VOODOO</a></li>
+            <li>
+              <a href="#about-voodoo">
+                <span class="lg:hidden">ABOUT VOODOO</span><span class="hidden lg:inline">ABOUT SECOND CHANCE</span>
+              </a>
+            </li>
             <li><a href="#career">CAREER</a></li>
             <li><a href="#facebook">FACEBOOK</a></li>
             <li><a href="#instagram">INSTAGRAM</a></li>
@@ -130,8 +165,8 @@
         </li>
       </ul>
 
-      <div class="flex justify-center items-center mt-12">
-        <svg width="80" height="80">
+      <div class="flex justify-center items-center mt-12 md:mt-0 md:mr-[123px]">
+        <svg width="80" height="80" class="md:w-[82px] md:h-[82px]">
           <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
       </div>
