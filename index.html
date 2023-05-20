@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VooDoo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="bg-lightSand">
+    <!-- -----------------------------Header-------------------------------------------->
+    <header class="p-6 flex justify-between items-center border-b border-black">
+      <div class="flex space-x-1">
+        <svg width="23" height="23">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+        <svg width="94" height="48">
+          <use href="./images/sprite.svg#icon-logo-text"></use>
+        </svg>
+      </div>
+      <div class="flex items-center space-x-4 h-[34px]">
+        <a href="#about-us" class="font-semibold text-sm pl-3">About us</a>
+        <button
+          class="bg-black text-white text-sm font-bold p-3 rounded h-[34px] flex items-center justify-center hover:bg-orangeHover focus:bg-orangeHover"
+        >
+          Sign-up
+        </button>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+      <!-- ---------------------------More info section--------------------------------->
+      <section class="pt-6 pb-[25px]">
+        <div class="bg-black rounded p-6 pb-0 more-info">
+          <div class="flex items-center pb-6">
+            <svg width="24" height="24">
+              <use href="./images/sprite.svg#icon-alert-circle"></use>
+            </svg>
+            <p class="font-bold text-base text-white ml-1.5">ALPHA</p>
+            <p class="font-medium text-sm text-white ml-6">Important info</p>
+            <svg width="24" height="24" class="ml-auto arrow">
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
+          </div>
+
+          <div class="info-box hidden">
+            <div class="py-6 border-y border-white">
+              <p class="font-medium text-sm text-white">
+                We’re working on a new service to offer you returned online goods at a discount near you.
+              </p>
+            </div>
+
+            <div class="pt-6 pb-4">
+              <h2 class="font-bold text-sm text-white mb-4">CURRENTLY</h2>
+              <ul class="font-regular text-xs text-white list-decimal list-inside space-y-4">
+                <li>Very limited assortment of items that we resell</li>
+                <li>All sorts of product categories</li>
+                <li>Focus on testing the ordering and pick-up experience</li>
+              </ul>
+            </div>
+
+            <div class="pt-4 pb-6">
+              <h2 class="font-bold text-sm text-white mb-4">FUTURE</h2>
+              <ul class="font-regular text-xs text-white list-decimal list-inside space-y-4">
+                <li>Returned items from other shoppers</li>
+                <li>Select product categories</li>
+                <li>Focus on end-to-end service experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------------------Products list section----------------------------->
+      <section class="py-[25px]">
+        <ul class="list flex flex-col items-center gap-12"></ul>
+      </section>
+
+      <!-- ---------------------------Sign-up section----------------------------------->
+      <section class="pt-[25px] pb-20">
+        <div class="py-12">
+          <p class="text-sm text-center">Be the first one to know when we launch our beta!</p>
+          <form class="mt-6 h-[43px] space-x-3 flex justify-center w-full">
+            <input
+              type="email"
+              class="p-4 rounded bg-white h-[43px] w-auto hover:shadow-outline focus:shadow-outline"
+              placeholder="E-mail"
+            />
+            <button
+              type="submit"
+              class="bg-orange rounded h-[43px] p-4 font-semibold text-base flex justify-center items-center hover:bg-orangeHover focus:bg-orangeHover"
+            >
+              Sign-up
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- -----------------------------Footer-------------------------------------------->
+    <footer class="bg-white p-12 border-t border-black">
+      <ul class="font-['Space Mono'] font-bold text-smFooter space-y-12">
+        <li>
+          <ul class="space-y-[19px]">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#returns">RETURNS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="space-y-[19px]">
+            <li><a href="#terms&conditions">TERMS & CONDITIONS</a></li>
+            <li><a href="#private-policy">PRIVACY POLICY</a></li>
+            <li><a href="#cookie-policy">COOKIE POLICY</a></li>
+            <li><a href="#cookie-settings">COOKIE SETTINGS</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="space-y-[19px]">
+            <li><a href="#about-voodoo">ABOUT VOODOO</a></li>
+            <li><a href="#career">CAREER</a></li>
+            <li><a href="#facebook">FACEBOOK</a></li>
+            <li><a href="#instagram">INSTAGRAM</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="flex justify-center items-center mt-12">
+        <svg width="80" height="80">
+          <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
+      </div>
+    </footer>
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

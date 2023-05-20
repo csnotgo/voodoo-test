@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Space Grotesk", sans-serif, "Space Mono", monospace;
+
+    :focus-visible {
+      outline: none;
+    }
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+}
