@@ -19,7 +19,7 @@ module.exports = {
         orangeHover: "#d84a0e",
       },
       boxShadow: {
-        outline: "0px 0px 10px 4px rgba(237,94,33,0.5)",
+        ligthOrange: "0px 0px 10px 4px rgba(237,94,33,0.5)",
       },
       screens: {
         sm: "400px",
