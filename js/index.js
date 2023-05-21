@@ -139,7 +139,10 @@ function createPaginationBtns(totalPages) {
         elem.classList.add("bg-black");
         elem.classList.add("text-white");
       }
-      window.scrollTo(0, 0);
+      window.scrollTo({
+        top,
+        behavior: "smooth",
+      });
     })
   );
 }
