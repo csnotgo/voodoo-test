@@ -140,7 +140,7 @@ function createPaginationBtns(totalPages) {
         elem.classList.add("text-white");
       }
       window.scrollTo({
-        top,
+        top: 0,
         behavior: "smooth",
       });
     })
